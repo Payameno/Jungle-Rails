@@ -111,3 +111,17 @@ form.button_to {
 .text-danger {
   color: #f38792 !important;
 }
+.center {
+  display: flex;
+  justify-content: center;
+}
+.div-inline {
+  display: flex;
+  flex-direction: row;
+}
+.btn-danger {
+  background-color: #dc3545 !important;
+}
+.sold-out {
+  color: white !important;
+}
