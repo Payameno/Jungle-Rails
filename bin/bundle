@@ -67,7 +67,7 @@ m = Module.new do
   end
 
   def bundler_requirement
-    return "#{Gem::Requirement.default}.a" unless bundler_version
+    return "#{GemRequirement.default}.a" unless bundler_version
 
     bundler_gem_version = Gem::Version.new(bundler_version)
 
