@@ -135,14 +135,28 @@ RSpec.describe User, type: :model do
                   })
     
                   expect(user.save).to be_truthy
-                  puts user.errors.full_messages
+
             
                 end
 
+                it 'Password should have a minimum length of 5' do
+
+                  user = User.new({
+                    first_name: 'Nelly',
+                    last_name: 'Furtado',
+                    email: 'nilly@gmail.com',
+                    password: '1234',
+                    password_confirmation: '1234',
+                  })
+    
+                  expect(user).to_not be_valid
+
+            
+                end
 end
 
-# describe '.authenticate_with_credentials' do
-# # examples for this class method here
-# end
+  describe '.authenticate_with_credentials' do
+  
+  end
 
 end
