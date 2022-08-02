@@ -61,7 +61,7 @@
           </ul>
         </li>
         <li class="nav-link text-danger">
-          <% if current_user %>Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout', class: "text-danger" %>
+          <% if current_user %>Signed in as <%= current_user.first_name %> <%= current_user.last_name %> | <%= link_to "Logout", '/logout', class: "text-danger" %>
           <% else %>
             <%= link_to 'Login', '/login', class: "text-danger" %> | <%= link_to 'Signup', '/signup', class: "text-danger" %>
           <% end %>
